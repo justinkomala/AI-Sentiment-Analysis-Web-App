@@ -33,45 +33,79 @@ model = tf.keras.Sequential([
     tf.keras.layers.Dense(1, activation="sigmoid")
 ])
 
-My Role 
+model.compile(
+    loss="binary_crossentropy",
+    optimizer="adam",
+    metrics=["accuracy"]
+)
+```
 
+---
+
+## My Role
 I developed the sentiment analysis workflow including data preprocessing, model training, evaluation and deployment preparation. I also designed the web interface and managed the integration between the trained AI model and prediction application.
 
-Tools and Technologies Used
-Python
-TensorFlow
-Keras
-NLP
-Streamlit
-Google Colab
-GitHub
-Machine Learning
-Deep Learning
-Skills Demonstrated
-Machine learning model development
-Natural Language Processing
-Deep learning implementation
-Data preprocessing
-Model evaluation
-AI application deployment
-Python programming
-Analytical problem solving
-Ethical Considerations
+---
 
+## Tools and Technologies Used
+- Python
+- TensorFlow
+- Keras
+- NLP
+- Streamlit
+- Google Colab
+- GitHub
+- Machine Learning
+- Deep Learning
+
+---
+
+## Skills Demonstrated
+- Machine learning model development
+- Natural Language Processing
+- Deep learning implementation
+- Data preprocessing
+- Model evaluation
+- AI application deployment
+- Python programming
+- Analytical problem solving
+
+---
+
+## Ethical Considerations
 The project considered ethical concerns related to AI bias and dataset quality. Text preprocessing and balanced data preparation were used to reduce misleading sentiment predictions and improve fairness in classification results.
 
-Screenshots
+---
 
-The screenshots folder contains:
+## Screenshots
 
-Main application interface
-Positive prediction example
-Negative prediction example
-Repository Structure
-artifacts
-model
-notebooks
-screenshots
-Project Outcome
+### Main Application Interface
+![Main Interface](screenshots/app-interface.png)
 
+### Positive Prediction Example
+![Positive Prediction](screenshots/positive-prediction.png)
+
+### Negative Prediction Example
+![Negative Prediction](screenshots/negative-prediction.png)
+
+---
+
+## Repository Structure
+
+```text
+AI-Sentiment-Analysis-Web-App
+│
+├── artifacts
+├── model
+├── notebooks
+├── screenshots
+│
+├── .gitignore
+├── LICENSE
+├── README.md
+```
+
+---
+
+## Project Outcome
 This project demonstrates how Artificial Intelligence and Natural Language Processing can be applied to automate sentiment analysis and support data driven decision making through an accessible web application.
